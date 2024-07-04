@@ -1,0 +1,51 @@
+@import './mixins.sass'
+  
+.contact
+  padding: 140px 5vw 20px
+  +breakpoint(sm)
+    padding: 8vmin 5vw 0.5vmin
+
+.contactDes
+  padding-bottom: 30px
+  +breakpoint(sm)
+    text-align: center
+    margin-bottom: 0
+    padding-bottom: 7vmin
+
+.contactSkills
+  p
+    font-size: 14px
+    +breakpoint(sm)
+      font-size: 12px
+
+.contactInfos
+  +setFlex(center,flex-start)
+  flex-direction: column
+  .contactInfo
+    margin-bottom: 15px
+    letter-spacing: 2.5px
+    font-size: 16px
+    display: inline-block
+    +breakpoint(sm)
+      font-size: 12px
+
+.contactSocialBar
+  margin: 50px auto
+  display: inline-block
+  +breakpoint(sm)
+    margin: 12vmin auto 14vmin
+  .iconify
+    margin: 0 8px
+    position: relative
+    z-index: 1
+    @media (min-width: 996px)
+      &:hover svg
+        color: #fcb437
+        z-index: 100
+
+.copyright
+  text-align: center
+  letter-spacing: 2px
+  font-size: 12px
+  +breakpoint(sm)
+    margin-bottom: 3vmin
